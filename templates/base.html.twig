@@ -85,17 +85,25 @@
 
                     <div class="col-md-6 text-md-end">
 
-                        <a href="{{ path('app_about') }}" class="text-light text-decoration-none me-3">
-                            À propos
-                        </a>
+                        <div class="mb-2">
+                            <a href="{{ path('app_about') }}" class="text-light text-decoration-none me-3">
+                                À propos
+                            </a>
 
-                        <a href="{{ path('app_contact') }}" class="text-light text-decoration-none me-3">
-                            Contact
-                        </a>
+                            <a href="{{ path('app_contact') }}" class="text-light text-decoration-none">
+                                Contact
+                            </a>
+                        </div>
 
-                        <a href="#" class="text-light text-decoration-none">
-                            Mentions légales
-                        </a>
+                        <div>
+                            <a href="{{ path('app_legal') }}" class="text-light text-decoration-none me-3">
+                                Mentions légales
+                            </a>
+
+                            <a href="{{ path('app_privacy') }}" class="text-light text-decoration-none">
+                                Politique de confidentialité
+                            </a>
+                        </div>
 
                     </div>
 

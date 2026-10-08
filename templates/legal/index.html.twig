@@ -1,0 +1,96 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mentions légales — Eyseal{% endblock %}
+
+{% block body %}
+
+<div class="container py-5">
+
+    <div class="text-center mb-5">
+        <h1>Mentions légales</h1>
+        <p class="lead text-body-secondary">
+            Informations légales relatives au site Eyseal
+        </p>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-9">
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Éditeur du site</h2>
+
+                <p>
+                    <strong>Eyseal</strong>
+                </p>
+
+                <p>
+                    Site professionnel et portfolio de Michaël Chassaing.
+                </p>
+
+                <p>
+                    E-mail :
+                    <a href="mailto:contact@eyseal.fr">
+                        contact@eyseal.fr
+                    </a>
+                </p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Hébergement</h2>
+
+                <p>
+                    Le site est hébergé par :
+                </p>
+
+                <p>
+                    <strong>À compléter</strong>
+                </p>
+
+                <p>
+                    Adresse : À compléter
+                </p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Propriété intellectuelle</h2>
+
+                <p>
+                    L'ensemble des contenus présents sur ce site, notamment les
+                    textes, éléments graphiques, logos, images et éléments
+                    techniques, est protégé par les dispositions relatives à la
+                    propriété intellectuelle.
+                </p>
+
+                <p>
+                    Toute reproduction ou utilisation sans autorisation
+                    préalable peut être soumise à restriction.
+                </p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Responsabilité</h2>
+
+                <p>
+                    Eyseal s'efforce de fournir des informations fiables et
+                    régulièrement mises à jour. Toutefois, aucune garantie
+                    n'est donnée concernant l'exactitude, l'exhaustivité ou
+                    l'actualité des informations publiées sur le site.
+                </p>
+            </section>
+
+            <section>
+                <h2 class="h3 mb-3">Contact</h2>
+
+                <p>
+                    Pour toute question concernant le site ou son contenu,
+                    vous pouvez utiliser le
+                    <a href="{{ path('app_contact') }}">formulaire de contact</a>.
+                </p>
+            </section>
+
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
