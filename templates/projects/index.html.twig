@@ -1,0 +1,128 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Réalisations — Eyseal{% endblock %}
+
+{% block body %}
+
+<main>
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h1>Mes réalisations</h1>
+            <p class="lead">
+                Découvrez quelques projets web, techniques et DevSecOps
+                réalisés au cours de mon parcours.
+            </p>
+        </div>
+
+
+        <div class="row g-4">
+
+            {# Projet 1 — Portfolio DevSecOps #}
+            <div class="col-lg-6">
+
+                <div class="card h-100">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-info mb-3">
+                            DevSecOps
+                        </span>
+
+                        <h2 class="h3">
+                            Portfolio DevSecOps
+                        </h2>
+
+                        <p>
+                            Mise en place d'un portfolio technique permettant
+                            de présenter mes compétences en DevOps, SecOps,
+                            Cloud, CI/CD, automatisation et cybersécurité.
+                        </p>
+
+                        <p>
+                            Le projet intègre notamment une chaîne CI/CD avec
+                            GitHub Actions, des tests automatisés, une analyse
+                            SAST avec Semgrep, une analyse de vulnérabilités
+                            des images Docker avec Trivy et une publication
+                            d'image sur GitHub Container Registry.
+                        </p>
+
+                        <div class="mb-3">
+                            <span class="badge bg-secondary">GitHub Actions</span>
+                            <span class="badge bg-secondary">Docker</span>
+                            <span class="badge bg-secondary">Trivy</span>
+                            <span class="badge bg-secondary">Semgrep</span>
+                            <span class="badge bg-secondary">CI/CD</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            {# Projet 2 — Site vitrine Symfony #}
+            <div class="col-lg-6">
+
+                <div class="card h-100">
+
+                    <div class="card-body p-4">
+
+                        <span class="badge bg-info mb-3">
+                            Développement web
+                        </span>
+
+                        <h2 class="h3">
+                            Site vitrine pour une agence digitale
+                        </h2>
+
+                        <p>
+                            Conception et développement d'un site vitrine
+                            pour une agence digitale dans le cadre d'un
+                            projet réalisé en équipe.
+                        </p>
+
+                        <p>
+                            Le projet a été réalisé avec le framework Symfony
+                            en collaboration avec une marketeuse, une
+                            designer et moi-même en tant que développeur.
+                        </p>
+
+                        <div class="mb-3">
+                            <span class="badge bg-secondary">Symfony</span>
+                            <span class="badge bg-secondary">PHP</span>
+                            <span class="badge bg-secondary">MySQL</span>
+                            <span class="badge bg-secondary">Bootstrap</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <section class="text-center py-5 mt-4">
+
+            <h2>Un projet en cours ?</h2>
+
+            <p class="lead">
+                Découvrez comment Eyseal peut vous accompagner dans votre
+                projet numérique.
+            </p>
+
+            <a href="{{ path('app_contact') }}" class="btn btn-primary btn-lg">
+                Me contacter
+            </a>
+
+        </section>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -1,0 +1,109 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact — Eyseal{% endblock %}
+
+{% block body %}
+
+<main>
+
+    {% for message in app.flashes('success') %}
+        <div class="container pt-4">
+            <div class="alert alert-success text-center" role="alert">
+                {{ message }}
+            </div>
+        </div>
+    {% endfor %}
+    
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h1>Contact</h1>
+            <p class="lead">
+                Un projet, un besoin ou une question ?
+                Échangeons ensemble.
+            </p>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="card">
+                    <div class="card-body p-4">
+
+                        {{ form_start(form) }}
+
+                            <div class="mb-3">
+                                {{ form_label(form.name, 'Nom', {
+                                    'label_attr': {'class': 'form-label'}
+                                }) }}
+
+                                {{ form_widget(form.name, {
+                                    'attr': {
+                                        'class': 'form-control'
+                                    }
+                                }) }}
+
+                                {{ form_errors(form.name) }}
+                            </div>
+
+                            <div class="mb-3">
+                                {{ form_label(form.email, 'Adresse e-mail', {
+                                    'label_attr': {'class': 'form-label'}
+                                }) }}
+
+                                {{ form_widget(form.email, {
+                                    'attr': {
+                                        'class': 'form-control'
+                                    }
+                                }) }}
+
+                                {{ form_errors(form.email) }}
+                            </div>
+
+                            <div class="mb-3">
+                                {{ form_label(form.subject, 'Objet', {
+                                    'label_attr': {'class': 'form-label'}
+                                }) }}
+
+                                {{ form_widget(form.subject, {
+                                    'attr': {
+                                        'class': 'form-control'
+                                    }
+                                }) }}
+
+                                {{ form_errors(form.subject) }}
+                            </div>
+
+                            <div class="mb-4">
+                                {{ form_label(form.message, 'Message', {
+                                    'label_attr': {'class': 'form-label'}
+                                }) }}
+
+                                {{ form_widget(form.message, {
+                                    'attr': {
+                                        'class': 'form-control'
+                                    }
+                                }) }}
+
+                                {{ form_errors(form.message) }}
+                            </div>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">
+                                    Envoyer le message
+                                </button>
+                            </div>
+                        {{ form_end(form) }}
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

@@ -19,6 +19,96 @@
         {% endif %}
     </head>
     <body>
+
+        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+            <div class="container">
+
+                <a class="navbar-brand" href="/">
+                    Eyseal
+                </a>
+
+                <button class="navbar-toggler"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mainNavbar"
+                        aria-controls="mainNavbar"
+                        aria-expanded="false"
+                        aria-label="Ouvrir le menu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav ms-auto">
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/">Accueil</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_services') }}">Services</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_projects')}}">Réalisations</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_about') }}">À propos</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ path('app_contact') }}">Contact</a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
         {% block body %}{% endblock %}
+
+        <footer class="bg-dark text-light border-top border-secondary mt-5">
+            <div class="container py-4">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 mb-3 mb-md-0">
+                        <p class="mb-1 fw-semibold">
+                            Eyseal
+                        </p>
+
+                        <p class="mb-0 text-light">
+                            Solutions web, informatiques et numériques.
+                        </p>
+                    </div>
+
+                    <div class="col-md-6 text-md-end">
+
+                        <a href="{{ path('app_about') }}" class="text-light text-decoration-none me-3">
+                            À propos
+                        </a>
+
+                        <a href="{{ path('app_contact') }}" class="text-light text-decoration-none me-3">
+                            Contact
+                        </a>
+
+                        <a href="#" class="text-light text-decoration-none">
+                            Mentions légales
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <hr class="border-secondary">
+
+                <p class="text-light text-center mb-0">
+                    © {{ "now"|date("Y") }} Eyseal — Tous droits réservés.
+                </p>
+
+            </div>
+        </footer>
+
     </body>
 </html>

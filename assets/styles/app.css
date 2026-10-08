@@ -1,3 +1,29 @@
-body {
-    background-color: skyblue;
+/* ==========================================================
+   Site professionnel — Michaël Chassaing
+   Personnalisation du thème Bootswatch Cyborg
+   ========================================================== */
+
+:root {
+    --site-accent: #00a8ff;
+    --site-accent-hover: #0088cc;
+}
+
+/* Liens */
+a {
+    color: var(--site-accent);
+}
+
+a:hover {
+    color: var(--site-accent-hover);
+}
+
+/* Boutons */
+.btn-primary {
+    background-color: var(--site-accent);
+    border-color: var(--site-accent);
+}
+
+.btn-primary:hover {
+    background-color: var(--site-accent-hover);
+    border-color: var(--site-accent-hover);
 }
