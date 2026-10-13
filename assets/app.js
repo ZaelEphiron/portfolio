@@ -1,4 +1,6 @@
 import './stimulus_bootstrap.js';
+import 'bootstrap.bundle';
+
 /*
  * Welcome to your app's main JavaScript file!
  *

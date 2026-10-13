@@ -7,38 +7,67 @@
 <main>
 
     {# Hero #}
-    <section class="container py-5">
-        <div class="row align-items-center py-5">
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center min-vh-75 py-5">
 
-            <div class="col-lg-8">
+                <div class="col-lg-7">
 
-                <p class="text-info fw-semibold mb-2">
-                    EYSEAL — SOLUTIONS NUMÉRIQUES
-                </p>
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        Solutions web · IT · cybersécurité
+                    </div>
 
-                <h1 class="display-4 fw-bold mb-4">
-                    Des solutions numériques
-                    <span class="text-info">pensées pour vous.</span>
-                </h1>
+                    <h1 class="hero-title mb-4">
+                        Des solutions numériques
+                        <span>qui font la différence.</span>
+                    </h1>
 
-                <p class="lead mb-4">
-                    Eyseal accompagne les professionnels dans leurs projets
-                    web, informatiques et numériques, avec une approche
-                    orientée performance, sécurité et accessibilité.
-                </p>
+                    <p class="hero-text mb-4">
+                        Eyseal accompagne les professionnels dans la création,
+                        l'évolution et la sécurisation de leurs projets numériques.
+                    </p>
 
-                <div class="d-flex gap-3 flex-wrap">
-                    <a href="{{ path('app_contact') }}" class="btn btn-primary btn-lg">
-                        Me contacter
-                    </a>
+                    <div class="d-flex justify-content-center gap-3 flex-wrap mt-5">
+                        <a href="{{ path('app_contact') }}" class="btn btn-primary btn-lg px-4">
+                            Parlons de votre projet
+                        </a>
 
-                    <a href="{{ path('app_projects') }}" class="btn btn-outline-info btn-lg">
-                        Voir mes réalisations
-                    </a>
+                        <a href="{{ path('app_services') }}" class="btn btn-outline-info btn-lg px-4">
+                            Découvrir mes services
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="col-lg-5 d-none d-lg-flex justify-content-center">
+
+                    <div class="hero-visual">
+                        <div class="hero-grid"></div>
+
+                        <div class="hero-circle hero-circle-1"></div>
+                        <div class="hero-circle hero-circle-2"></div>
+
+                        <div class="hero-card">
+                            <div class="hero-card-header">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+
+                            <div class="hero-card-body">
+                                <div class="hero-code-line long"></div>
+                                <div class="hero-code-line medium"></div>
+                                <div class="hero-code-line short"></div>
+                                <div class="hero-code-line medium"></div>
+                                <div class="hero-code-line long"></div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
 
             </div>
-
         </div>
     </section>
 
@@ -168,7 +197,7 @@
 
         <div class="row align-items-center">
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 text-center">
                 <h2>Des projets concrets</h2>
 
                 <p class="lead">
@@ -177,7 +206,7 @@
                 </p>
             </div>
 
-            <div class="col-lg-4 text-lg-end">
+            <div class="col-lg-4 d-flex justify-content-center">
                 <a href="{{ path('app_projects') }}" class="btn btn-primary">
                     Voir mes réalisations
                 </a>

@@ -1,0 +1,145 @@
+
+{% extends 'base.html.twig' %}
+
+{% block title %}SEO & Accessibilité numérique — Eyseal{% endblock %}
+
+{% block body %}
+
+<main>
+
+    <section class="services-hero py-5">
+        <div class="container py-lg-5">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-8 mx-auto text-center">
+
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        Visibilité et accessibilité numérique
+                    </div>
+
+                    <h1 class="hero-title mb-4">
+                        Un site plus visible,
+                        <span>accessible à tous.</span>
+                    </h1>
+
+                    <p class="hero-text mb-4">
+                        Eyseal vous accompagne dans l'amélioration du référencement
+                        naturel et de l'accessibilité de votre site web pour offrir
+                        une meilleure expérience à vos visiteurs.
+                    </p>
+
+                    <a href="{{ path('app_contact', {
+                        sujet: 'Demande de devis SEO et accessibilité',
+                        message: 'Bonjour, je souhaite échanger au sujet du référencement naturel et/ou de l’accessibilité de mon site web.'
+                    }) }}" class="btn btn-primary">
+                        Décrire mon besoin
+                    </a>
+
+                </div>
+                
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Mes prestations</h2>
+            <p class="lead">
+                Des analyses concrètes pour identifier les améliorations
+                prioritaires de votre site web.
+            </p>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+                <div class="services-card h-100">
+                    <div class="card-body">
+
+                        <div class="service-icon">SEO</div>
+
+                        <h2 class="card-title h4">
+                            Audit de référencement naturel
+                        </h2>
+
+                        <p class="card-text">
+                            Analyse des principaux facteurs qui influencent
+                            la visibilité de votre site dans les moteurs de recherche.
+                        </p>
+
+                        <ul>
+                            <li>Analyse de la structure des pages et des titres</li>
+                            <li>Vérification des métadonnées et des liens</li>
+                            <li>Repérage des problèmes techniques visibles</li>
+                            <li>Recommandations d'amélioration priorisées</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="services-card h-100">
+                    <div class="card-body">
+
+                        <div class="service-icon">RGAA</div>
+
+                        <h2 class="card-title h4">
+                            Audit d'accessibilité numérique
+                        </h2>
+
+                        <p class="card-text">
+                            Identification des obstacles susceptibles de gêner
+                            les personnes en situation de handicap lors de
+                            l'utilisation de votre site.
+                        </p>
+
+                        <ul>
+                            <li>Vérification des contrastes et de la lisibilité</li>
+                            <li>Contrôle de la structure des titres</li>
+                            <li>Examen des textes alternatifs des images</li>
+                            <li>Premières vérifications de navigation au clavier</li>
+                            <li>Recommandations inspirées des critères du RGAA</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container pb-5">
+
+        <div class="services-card">
+            <div class="card-body text-center p-4">
+
+                <h2 class="h3 mb-3">
+                    Améliorons votre site web
+                </h2>
+
+                <p class="card-text mb-4">
+                    Vous souhaitez mieux comprendre les points forts et les
+                    axes d'amélioration de votre site ? Parlons de votre projet.
+                </p>
+
+                <a href="{{ path('app_contact', {
+                    sujet: 'Demande de devis SEO et accessibilité',
+                    message: 'Bonjour, je souhaite obtenir des informations sur vos prestations SEO et accessibilité numérique.'
+                }) }}" class="btn btn-primary">
+                    Demander un devis
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}

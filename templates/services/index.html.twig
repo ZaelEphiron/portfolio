@@ -6,89 +6,242 @@
 
 <main>
 
+    {# ==========================================================
+       HERO SERVICES
+       ========================================================== #}
+
+    <section class="services-hero py-5">
+        <div class="container py-lg-5">
+
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-7">
+
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        Des solutions adaptées à vos besoins
+                    </div>
+
+                    <h1 class="hero-title mb-4">
+                        Des services
+                        <span>pensés pour avancer.</span>
+                    </h1>
+
+                    <p class="hero-text mb-0">
+                        De la création de votre site web à la sécurisation
+                        de votre environnement informatique, Eyseal vous
+                        accompagne dans vos projets numériques.
+                    </p>
+
+                </div>
+
+                <div class="col-lg-5">
+
+                    <div class="services-visual">
+
+                        <div class="services-orbit services-orbit-1"></div>
+                        <div class="services-orbit services-orbit-2"></div>
+
+                        <div class="services-floating-card services-card-web">
+                            <span>WEB</span>
+                        </div>
+
+                        <div class="services-floating-card services-card-it">
+                            <span>IT</span>
+                        </div>
+
+                        <div class="services-floating-card services-card-security">
+                            <span>SECURITY</span>
+                        </div>
+
+                        <div class="services-center">
+                            <span>EYSEAL</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    {# ==========================================================
+       SERVICES
+       ========================================================== #}
+
     <section class="container py-5">
+
         <div class="text-center mb-5">
-            <h1>Mes services</h1>
+            <h2>Mes services</h2>
+
             <p class="lead">
-                Des solutions numériques adaptées aux besoins des professionnels.
-            </p>
+                De la conception de votre site web à l'amélioration de votre sécurité numérique, en passant par le référencement et l'identité visuelle, je vous accompagne dans vos projets avec des solutions adaptées à vos besoins.
         </div>
 
         <div class="row g-4">
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_web_essentiel') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">Développement web</h2>
+
+                        <div class="service-icon">
+                            WEB
+                        </div>
+
+                        <h2 class="card-title h4">
+                            Développement web
+                        </h2>
+
                         <p class="card-text">
                             Création de sites web et d'applications sur mesure
                             avec Symfony, PHP et les technologies web modernes.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir l'Offre Essentielle</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_web_wordpress_essentiel') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">WordPress</h2>
+
+                        <div class="service-icon">
+                            WP
+                        </div>
+
+                        <h2 class="card-title h4">
+                            WordPress
+                        </h2>
+
                         <p class="card-text">
                             Création, personnalisation, optimisation et
                             maintenance de sites WordPress.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir l'Offre Essentielle CMS</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_maintenance_essentiel') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">Maintenance informatique</h2>
+
+                        <div class="service-icon">
+                            IT
+                        </div>
+
+                        <h2 class="card-title h4">
+                            Maintenance informatique
+                        </h2>
+
                         <p class="card-text">
                             Assistance, maintenance et accompagnement pour
                             les équipements et environnements informatiques.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir l’offre Maintenance</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_cybersecurite') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">Cybersécurité</h2>
+
+                        <div class="service-icon">
+                            SEC
+                        </div>
+
+                        <h2 class="card-title h4">
+                            Cybersécurité
+                        </h2>
+
                         <p class="card-text">
-                            Accompagnement autour de la sécurité informatique,
-                            des bonnes pratiques et de la protection des systèmes.
+                            Cybersécurité, tests d’intrusion, analyse forensic,
+                            sécurisation des systèmes, administration Active Directory
+                            et configuration réseau.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir les services</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_seo_accessibilite') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">SEO &amp; accessibilité</h2>
+
+                        <div class="service-icon">
+                            SEO
+                        </div>
+
+                        <h2 class="card-title h4">
+                            SEO &amp; accessibilité
+                        </h2>
+
                         <p class="card-text">
                             Audit SEO et amélioration de l'accessibilité
                             numérique selon les bonnes pratiques du RGAA.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir les prestations</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
             <div class="col-md-6 col-lg-4">
-                <div class="card h-100">
+                <a href="{{ path('app_service_graphisme') }}" class="services-card service-link">
                     <div class="card-body">
-                        <h2 class="card-title h4">Graphisme</h2>
+
+                        <div class="service-icon">
+                            GFX
+                        </div>
+
+                        <h2 class="card-title h4">
+                            Graphisme
+                        </h2>
+
                         <p class="card-text">
                             Création de logos, supports graphiques et chartes
                             graphiques pour développer votre identité visuelle.
                         </p>
+
+                        <div class="service-card-cta">
+                            <span>Découvrir les prestations</span>
+                            <span aria-hidden="true">→</span>
+                        </div>
+
                     </div>
-                </div>
+                </a>
             </div>
 
         </div>
+
     </section>
 
 </main>

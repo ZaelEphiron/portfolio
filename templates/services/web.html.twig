@@ -1,0 +1,268 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Développement web — Eyseal{% endblock %}
+
+{% block body %}
+
+<main>
+
+    <section class="services-hero py-5">
+        <div class="container py-lg-5">
+
+            <div class="row justify-content-center text-center">
+
+                <div class="col-lg-9">
+
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        Développement web
+                    </div>
+
+                    <h1 class="hero-title mb-4 mx-auto">
+                        Des sites web
+                        <span>pensés pour vos besoins.</span>
+                    </h1>
+
+                    <p class="hero-text mb-0 mx-auto">
+                        Création de sites vitrines et d'applications web
+                        sur mesure, avec des technologies modernes et une
+                        attention particulière portée à la performance,
+                        à la sécurité et à l'expérience utilisateur.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Ce que je propose</h2>
+
+            <p class="lead">
+                Des solutions web adaptées à votre activité, vos objectifs
+                et votre niveau de maturité numérique.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="card-body">
+
+                        <div class="service-icon">
+                            SITE
+                        </div>
+
+                        <h3 class="h4">
+                            Site vitrine
+                        </h3>
+
+                        <p class="mb-3">
+                            Création d'un site professionnel pour présenter votre activité,
+                            vos services et votre identité en ligne.
+                        </p>
+
+                        <ul class="service-features mb-0">
+                            <li>Design responsive</li>
+                            <li>Pages adaptées à votre activité</li>
+                            <li>Formulaire de contact</li>
+                            <li>Optimisation SEO de base</li>
+                            <li>Accessibilité numérique</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="card-body">
+
+                        <div class="service-icon">
+                            APP
+                        </div>
+
+                        <h3 class="h4">
+                            Application web
+                        </h3>
+
+                        <p class="mb-3">
+                            Développement d'applications web sur mesure pour répondre
+                            à des besoins métier spécifiques.
+                        </p>
+
+                        <ul class="service-features mb-0">
+                            <li>Fonctionnalités personnalisées</li>
+                            <li>Interfaces adaptées aux utilisateurs</li>
+                            <li>Gestion des données</li>
+                            <li>Architecture évolutive</li>
+                            <li>Développement sécurisé</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12"></div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card">
+                    <div class="card-body">
+
+                        <div class="service-icon">
+                            PHP
+                        </div>
+
+                        <h3 class="h4">
+                            Développement sur mesure
+                        </h3>
+
+                        <p class="mb-3">
+                            Conception et développement de solutions web adaptées
+                            aux besoins spécifiques de votre activité.
+                        </p>
+
+                        <ul class="service-features mb-0">
+                            <li>Développement PHP &amp; Symfony</li>
+                            <li>Fonctionnalités sur mesure</li>
+                            <li>Base de données MySQL</li>
+                            <li>Architecture évolutive</li>
+                            <li>Maintenance et évolution</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="text-center mt-5">
+
+            <p class="service-cta-text mb-3">
+                Vous avez un projet web spécifique ?
+            </p>
+
+            <a href="{{ path('app_contact') }}" class="btn btn-primary btn-lg px-4">
+                Parlons de votre projet
+            </a>
+
+        </div>
+
+    </section>
+
+    <section class="container py-5">
+
+    <div class="text-center mb-5">
+        <h2>Nos offres</h2>
+
+        <p class="lead">
+            Des formules adaptées à différents niveaux de besoins.
+        </p>
+    </div>
+
+    <div class="row g-4 justify-content-center">
+
+        <div class="col-md-6 col-lg-4">
+            <a href="#" class="services-card service-link h-100">
+
+                <div class="card-body">
+
+                    <div class="service-icon">
+                        01
+                    </div>
+
+                    <h3 class="h4">
+                        Essentiel
+                    </h3>
+
+                    <p>
+                        Une présence professionnelle en ligne avec
+                        les fonctionnalités indispensables.
+                    </p>
+
+                    <ul class="service-features mb-0">
+                        <li>Site vitrine</li>
+                        <li>Design responsive</li>
+                        <li>Pages essentielles</li>
+                        <li>Formulaire de contact</li>
+                        <li>SEO de base</li>
+                    </ul>
+
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+            <a href="#" class="services-card services-card-featured service-link h-100">
+
+                <div class="card-body">
+
+                    <div class="service-icon">
+                        02
+                    </div>
+
+                    <h3 class="h4">
+                        Professionnel
+                    </h3>
+
+                    <p>
+                        Un site plus complet pour développer votre
+                        présence et votre activité en ligne.
+                    </p>
+
+                    <ul class="service-features mb-0">
+                        <li>Site vitrine complet</li>
+                        <li>Design personnalisé</li>
+                        <li>Pages supplémentaires</li>
+                        <li>Formulaire de contact avancé</li>
+                        <li>SEO renforcé</li>
+                    </ul>
+
+                </div>
+            </a>
+        </div>
+
+
+        <div class="col-md-6 col-lg-4">
+            <a href="#" class="services-card service-link h-100">
+
+                <div class="card-body">
+
+                    <div class="service-icon">
+                        03
+                    </div>
+
+                    <h3 class="h4">
+                        Sur mesure
+                    </h3>
+
+                    <p>
+                        Une solution conçue spécifiquement pour
+                        répondre à vos besoins métier.
+                    </p>
+
+                    <ul class="service-features mb-0">
+                        <li>Fonctionnalités personnalisées</li>
+                        <li>Architecture sur mesure</li>
+                        <li>Développement spécifique</li>
+                        <li>Intégrations selon les besoins</li>
+                        <li>Accompagnement personnalisé</li>
+                    </ul>
+
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+{% endblock %}

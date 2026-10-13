@@ -17,7 +17,15 @@ final class ContactController extends AbstractController
         Request $request,
         MailerInterface $mailer
     ): Response {
-        $form = $this->createForm(ContactType::class);
+        
+        $form = $this->createForm(ContactType::class, null, [
+            'data' => [
+                'name' => '',
+                'email' => '',
+                'subject' => $request->query->get('sujet', ''),
+                'message' => $request->query->get('message', ''),
+            ],
+        ]);
 
         $form->handleRequest($request);
 

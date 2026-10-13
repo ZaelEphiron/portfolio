@@ -1,0 +1,166 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Graphisme & communication — Eyseal{% endblock %}
+
+{% block body %}
+
+<main>
+
+    <section class="services-hero py-5">
+        <div class="container py-lg-5">
+
+            <div class="row justify-content-center text-center">
+                <div class="col-lg-9">
+
+                    <div class="hero-badge mb-4">
+                        <span class="hero-badge-dot"></span>
+                        Identité visuelle et communication
+                    </div>
+
+                    <h1 class="hero-title mb-4">
+                        Donnez une identité
+                        <span>à vos idées.</span>
+                    </h1>
+
+                    <p class="hero-text mb-4">
+                        Eyseal vous accompagne dans la création de supports
+                        graphiques cohérents et soignés pour valoriser votre
+                        activité, affirmer votre identité et communiquer efficacement.
+                    </p>
+
+                    <a href="{{ path('app_contact', {
+                        sujet: 'Demande de devis graphisme et communication',
+                        message: 'Bonjour, je souhaite échanger au sujet d’un projet de graphisme et de communication visuelle.'
+                    }) }}" class="btn btn-primary">
+                        Décrire mon projet
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="container py-5">
+
+        <div class="text-center mb-5">
+            <h2>Mes prestations</h2>
+            <p class="lead">
+                Des créations adaptées à votre activité, à vos supports
+                et à votre identité visuelle.
+            </p>
+        </div>
+
+        <div class="row g-4 justify-content-center">
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card h-100">
+                    <div class="card-body">
+
+                        <div class="service-icon">LOGO</div>
+
+                        <h2 class="card-title h4">
+                            Identité visuelle
+                        </h2>
+
+                        <p class="card-text">
+                            Création ou évolution de votre identité graphique
+                            pour donner une image cohérente et reconnaissable
+                            à votre activité.
+                        </p>
+
+                        <ul>
+                            <li>Création de logos</li>
+                            <li>Choix des couleurs et des typographies</li>
+                            <li>Déclinaisons graphiques adaptées aux supports</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card h-100">
+                    <div class="card-body">
+
+                        <div class="service-icon">PRINT</div>
+
+                        <h2 class="card-title h4">
+                            Supports de communication
+                        </h2>
+
+                        <p class="card-text">
+                            Conception de supports visuels destinés à présenter
+                            votre activité, promouvoir vos services ou annoncer
+                            vos événements.
+                        </p>
+
+                        <ul>
+                            <li>Flyers et affiches</li>
+                            <li>Cartes de visite</li>
+                            <li>Brochures et documents de présentation</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4">
+                <div class="services-card h-100">
+                    <div class="card-body">
+
+                        <div class="service-icon">DIGITAL</div>
+
+                        <h2 class="card-title h4">
+                            Communication numérique
+                        </h2>
+
+                        <p class="card-text">
+                            Création de visuels adaptés à vos supports
+                            numériques afin de conserver une communication
+                            cohérente sur vos différents canaux.
+                        </p>
+
+                        <ul>
+                            <li>Visuels pour les réseaux sociaux</li>
+                            <li>Bannières et illustrations numériques</li>
+                            <li>Déclinaisons de votre identité graphique</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="container pb-5">
+
+        <div class="services-card">
+            <div class="card-body text-center p-4">
+
+                <h2 class="h3 mb-3">
+                    Construisons votre identité visuelle
+                </h2>
+
+                <p class="card-text mb-4">
+                    Vous avez une idée, un besoin précis ou un projet à développer ?
+                    Échangeons sur vos attentes pour définir une prestation adaptée.
+                </p>
+
+                <a href="{{ path('app_contact', {
+                    sujet: 'Demande de devis graphisme et communication',
+                    message: 'Bonjour, je souhaite présenter mon projet de graphisme et obtenir des informations sur vos prestations.'
+                }) }}" class="btn btn-primary">
+                    Demander un devis
+                </a>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+{% endblock %}
