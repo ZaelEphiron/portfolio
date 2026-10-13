@@ -12,5 +12,7 @@ final class ServicesControllerTest extends WebTestCase
         $client->request('GET', '/services');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

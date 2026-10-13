@@ -12,5 +12,7 @@ final class ServiceMaintenanceEssentielControllerTest extends WebTestCase
         $client->request('GET', '/services/maintenance-informatique/essentiel');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

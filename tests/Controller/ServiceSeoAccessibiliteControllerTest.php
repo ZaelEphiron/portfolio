@@ -12,5 +12,7 @@ final class ServiceSeoAccessibiliteControllerTest extends WebTestCase
         $client->request('GET', '/services/seo-accessibilite');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

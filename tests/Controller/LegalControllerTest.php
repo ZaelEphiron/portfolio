@@ -12,5 +12,7 @@ final class LegalControllerTest extends WebTestCase
         $client->request('GET', '/legal');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

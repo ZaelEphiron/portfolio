@@ -12,5 +12,7 @@ final class PrivacyControllerTest extends WebTestCase
         $client->request('GET', '/privacy');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

@@ -12,5 +12,7 @@ final class ServiceWebWordPressEssentielControllerTest extends WebTestCase
         $client->request('GET', '/services/developpement-web/wordpress/essentiel');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

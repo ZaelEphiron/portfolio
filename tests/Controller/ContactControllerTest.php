@@ -12,5 +12,7 @@ final class ContactControllerTest extends WebTestCase
         $client->request('GET', '/contact');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

@@ -12,5 +12,7 @@ final class ServiceCybersecuriteControllerTest extends WebTestCase
         $client->request('GET', '/services/cybersecurite');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

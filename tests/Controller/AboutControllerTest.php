@@ -12,5 +12,7 @@ final class AboutControllerTest extends WebTestCase
         $client->request('GET', '/about');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

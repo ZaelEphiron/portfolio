@@ -12,5 +12,7 @@ final class ServiceGraphismeControllerTest extends WebTestCase
         $client->request('GET', '/services/graphisme-communication');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }

@@ -12,5 +12,7 @@ final class ProjectsControllerTest extends WebTestCase
         $client->request('GET', '/projects');
 
         self::assertResponseIsSuccessful();
+        self::assertSelectorExists('body');
+        self::assertSelectorExists('h1');
     }
 }
