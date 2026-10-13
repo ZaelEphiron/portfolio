@@ -2,6 +2,10 @@
 
 {% block title %}Politique de confidentialité — Eyseal{% endblock %}
 
+{% block meta_description %}
+Consultez la politique de confidentialité d'Eyseal : données collectées via le formulaire de contact, utilisation, conservation et droits des personnes.
+{% endblock %}
+
 {% block body %}
 
 <div class="container py-5">
@@ -15,6 +19,20 @@
 
     <div class="row justify-content-center">
         <div class="col-lg-9">
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Responsable du traitement</h2>
+
+                <p>
+                    Le responsable du traitement des données personnelles collectées
+                    sur le site Eyseal est l'éditeur du site.
+                </p>
+
+                <p>
+                    Ses coordonnées professionnelles seront précisées lors de la
+                    mise en ligne du site.
+                </p>
+            </section>
 
             <section class="mb-5">
                 <h2 class="h3 mb-3">Données collectées</h2>
@@ -33,16 +51,36 @@
             </section>
 
             <section class="mb-5">
-                <h2 class="h3 mb-3">Finalité du traitement</h2>
+                <h2 class="h3 mb-3">Base légale du traitement</h2>
 
                 <p>
-                    Ces informations sont utilisées uniquement afin de permettre
-                    le traitement de votre demande et de vous répondre.
+                    Le traitement de vos données personnelles repose sur notre intérêt
+                    légitime à répondre aux demandes qui nous sont adressées et à assurer
+                    le suivi des échanges avec les personnes intéressées par nos services.
                 </p>
 
                 <p>
-                    Elles ne sont pas utilisées à des fins commerciales sans
-                    votre accord.
+                    Lorsque des données sont conservées à des fins de prospection
+                    commerciale, leur traitement est effectué dans le respect de la
+                    réglementation applicable en matière de protection des données
+                    personnelles.
+                </p>
+            </section>
+
+            <section class="mb-5">
+                <h2 class="h3 mb-3">Finalité du traitement</h2>
+
+                <p>
+                    Les informations collectées via le formulaire de contact sont
+                    utilisées afin de traiter votre demande, de vous répondre et,
+                    si nécessaire, d'assurer le suivi des échanges concernant
+                    votre projet.
+                </p>
+
+                <p>
+                    Elles ne sont pas utilisées à des fins de prospection commerciale
+                    sans que les conditions prévues par la réglementation applicable
+                    soient respectées.
                 </p>
             </section>
 
@@ -50,10 +88,23 @@
                 <h2 class="h3 mb-3">Durée de conservation</h2>
 
                 <p>
-                    Les données transmises via le formulaire de contact sont
-                    conservées pendant la durée nécessaire au traitement de
-                    votre demande, puis supprimées lorsqu'elles ne sont plus
-                    nécessaires.
+                    Les données transmises via le formulaire de contact sont conservées
+                    pendant le temps nécessaire au traitement de votre demande, puis
+                    supprimées lorsqu'elles ne sont plus nécessaires.
+                </p>
+
+                <p>
+                    Lorsque votre demande donne lieu à des échanges commerciaux,
+                    vos données peuvent être conservées pendant une durée maximale
+                    de trois ans à compter de votre dernier contact, lorsque cette
+                    conservation est justifiée.
+                </p>
+
+                <p>
+                    Les messages peuvent également rester présents dans les boîtes
+                    de messagerie utilisées pour leur réception et leur traitement.
+                    Leur conservation dépend notamment des règles de gestion de
+                    ces messageries.
                 </p>
             </section>
 
@@ -61,8 +112,15 @@
                 <h2 class="h3 mb-3">Destinataires des données</h2>
 
                 <p>
-                    Les informations transmises via le formulaire sont destinées
-                    à Eyseal dans le cadre du traitement de votre demande.
+                    Les informations transmises via le formulaire de contact sont
+                    destinées à Eyseal afin de traiter votre demande et de vous répondre.
+                </p>
+
+                <p>
+                    Elles peuvent également être traitées par les prestataires
+                    techniques intervenant dans l'hébergement du site et l'acheminement
+                    ou le stockage des courriels, dans la mesure nécessaire à leurs
+                    services.
                 </p>
             </section>
 
@@ -70,19 +128,29 @@
                 <h2 class="h3 mb-3">Vos droits</h2>
 
                 <p>
-                    Conformément à la réglementation applicable en matière de
-                    protection des données personnelles, vous disposez notamment
-                    d'un droit d'accès, de rectification, d'effacement et
-                    d'opposition concernant vos données personnelles, dans les
-                    conditions prévues par la réglementation.
+                    Conformément à la réglementation applicable en matière de protection
+                    des données personnelles, vous disposez notamment d'un droit d'accès,
+                    de rectification et d'effacement de vos données, ainsi que, selon
+                    les conditions applicables, d'un droit d'opposition et d'un droit
+                    à la limitation du traitement.
                 </p>
 
                 <p>
-                    Pour exercer vos droits ou pour toute question relative à
-                    vos données personnelles, vous pouvez utiliser le
-                    <a href="{{ path('app_contact') }}">
-                        formulaire de contact
-                    </a>.
+                    Pour exercer vos droits ou pour toute question relative à vos données
+                    personnelles, vous pouvez contacter Eyseal via le
+                    <a href="{{ path('app_contact') }}">formulaire de contact</a>.
+                </p>
+
+                <p>
+                    Si vous estimez, après nous avoir contactés, que vos droits ne sont
+                    pas respectés, vous pouvez adresser une réclamation à la Commission
+                    nationale de l'informatique et des libertés (CNIL).
+                </p>
+
+                <p>
+                    <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer">
+                        Consulter la procédure de réclamation de la CNIL
+                    </a>
                 </p>
             </section>
 
@@ -90,14 +158,21 @@
                 <h2 class="h3 mb-3">Cookies</h2>
 
                 <p>
-                    Le site peut utiliser des cookies ou technologies similaires
-                    nécessaires à son fonctionnement.
+                    Le site Eyseal n'intègre actuellement aucun outil de mesure
+                    d'audience ni de publicité nécessitant le dépôt de cookies
+                    à des fins de suivi.
                 </p>
 
                 <p>
-                    Si des services supplémentaires utilisant des cookies sont
-                    ajoutés ultérieurement, les informations correspondantes
-                    seront mises à jour dans cette politique.
+                    Des cookies ou autres traceurs strictement nécessaires au
+                    fonctionnement du site peuvent toutefois être utilisés,
+                    notamment par le framework Symfony ou les mécanismes de session.
+                </p>
+
+                <p>
+                    Si de nouveaux services utilisant des cookies ou traceurs sont
+                    ajoutés ultérieurement, cette politique sera mise à jour afin
+                    de vous informer des traitements concernés.
                 </p>
             </section>
 

@@ -16,13 +16,6 @@ final class ServicesController extends AbstractController
         ]);
     }
 
-    #[Route('/services/developpement-web', name: 'app_service_web')]
-    public function web(): Response
-    {
-        return $this->render('services/web.html.twig');
-    }
-
-    
     #[Route('/services/developpement-web/essentiel', name: 'app_service_web_essentiel')]
     public function webEssentiel(): Response
     {
