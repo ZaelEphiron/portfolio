@@ -4,8 +4,22 @@
    ========================================================== */
 
 :root {
-    --site-accent: #00a8ff;
-    --site-accent-hover: #0088cc;
+    /* Identité Eyseal */
+    --site-accent: #00D1FF;
+    --site-accent-hover: #00A6CC;
+
+    /* Fonds */
+    --site-bg: #0B1120;
+    --site-bg-secondary: #111C30;
+    --site-surface: #16243A;
+
+    /* Textes */
+    --site-text: #F1F5F9;
+    --site-text-secondary: #A7B4C7;
+
+    /* Bordures et effets */
+    --site-border: rgba(0, 209, 255, 0.18);
+    --site-glow: rgba(0, 209, 255, 0.12);
 }
 
 /* Liens */
@@ -29,6 +43,272 @@ a:hover {
 }
 
 /* ==========================================================
+   IDENTITÉ VISUELLE — Styles globaux
+   ========================================================== */
+
+body {
+    background-color: var(--site-bg);
+    color: var(--site-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--site-text);
+}
+
+.text-muted {
+    color: var(--site-text-secondary) !important;
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Cartes
+   ========================================================== */
+
+.card {
+    background-color: var(--site-surface);
+    border-color: var(--site-border);
+    color: var(--site-text);
+}
+
+.card-header,
+.card-footer {
+    background-color: var(--site-bg-secondary);
+    border-color: var(--site-border);
+}
+
+.card-title {
+    color: var(--site-text);
+}
+
+.card-text {
+    color: var(--site-text-secondary);
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Formulaires
+   ========================================================== */
+
+.form-control,
+.form-select {
+    background-color: var(--site-bg-secondary);
+    border-color: var(--site-border);
+    color: var(--site-text);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--site-bg-secondary);
+    border-color: var(--site-accent);
+    color: var(--site-text);
+    box-shadow: 0 0 0 0.2rem var(--site-glow);
+}
+
+.form-control::placeholder {
+    color: var(--site-text-secondary);
+    opacity: 0.7;
+}
+
+.form-label {
+    color: var(--site-text);
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Navigation
+   ========================================================== */
+
+.navbar {
+    background-color: var(--site-bg-secondary);
+    border-bottom: 1px solid var(--site-border);
+}
+
+.navbar-brand {
+    color: var(--site-text);
+}
+
+.navbar-brand:hover {
+    color: var(--site-accent);
+}
+
+.navbar .nav-link {
+    color: var(--site-text-secondary);
+    transition: color 0.2s ease;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .nav-link.active {
+    color: var(--site-accent);
+}
+
+.navbar-toggler {
+    border-color: var(--site-border);
+}
+
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.2rem var(--site-glow);
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — États des boutons
+   ========================================================== */
+
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: var(--site-accent-hover);
+    border-color: var(--site-accent-hover);
+    box-shadow: 0 0 0 0.2rem var(--site-glow);
+}
+
+.btn-outline-primary {
+    color: var(--site-accent);
+    border-color: var(--site-accent);
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:active {
+    color: var(--site-bg);
+    background-color: var(--site-accent);
+    border-color: var(--site-accent);
+}
+
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 0.2rem var(--site-glow);
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Alertes
+   ========================================================== */
+
+.alert {
+    border-color: var(--site-border);
+    color: var(--site-text);
+}
+
+.alert-info {
+    background-color: rgba(0, 209, 255, 0.08);
+    border-color: rgba(0, 209, 255, 0.3);
+    color: var(--site-text);
+}
+
+.alert-success {
+    background-color: rgba(25, 135, 84, 0.12);
+    border-color: rgba(25, 135, 84, 0.4);
+    color: #75D6A5;
+}
+
+.alert-warning {
+    background-color: rgba(255, 193, 7, 0.10);
+    border-color: rgba(255, 193, 7, 0.4);
+    color: #FFD76A;
+}
+
+.alert-danger {
+    background-color: rgba(220, 53, 69, 0.12);
+    border-color: rgba(220, 53, 69, 0.4);
+    color: #FF8792;
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Badges
+   ========================================================== */
+
+.badge.bg-primary {
+    background-color: var(--site-accent) !important;
+    color: var(--site-bg) !important;
+}
+
+.badge.bg-secondary {
+    background-color: var(--site-surface) !important;
+    color: var(--site-text-secondary) !important;
+    border: 1px solid var(--site-border);
+}
+
+.badge.bg-info {
+    background-color: rgba(0, 209, 255, 0.15) !important;
+    color: var(--site-accent) !important;
+}
+
+.badge.bg-success {
+    background-color: rgba(25, 135, 84, 0.18) !important;
+    color: #75D6A5 !important;
+}
+
+.badge.bg-warning {
+    background-color: rgba(255, 193, 7, 0.15) !important;
+    color: #FFD76A !important;
+}
+
+.badge.bg-danger {
+    background-color: rgba(220, 53, 69, 0.18) !important;
+    color: #FF8792 !important;
+}
+
+/* ==========================================================
+   COMPOSANTS BOOTSTRAP — Pagination
+   ========================================================== */
+
+.page-link {
+    background-color: var(--site-bg-secondary);
+    border-color: var(--site-border);
+    color: var(--site-accent);
+}
+
+.page-link:hover {
+    background-color: var(--site-surface);
+    border-color: var(--site-accent);
+    color: var(--site-accent-hover);
+}
+
+.page-item.active .page-link {
+    background-color: var(--site-accent);
+    border-color: var(--site-accent);
+    color: var(--site-bg);
+}
+
+.page-item.disabled .page-link {
+    background-color: var(--site-bg-secondary);
+    border-color: var(--site-border);
+    color: var(--site-text-secondary);
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem var(--site-glow);
+}
+
+/* ==========================================================
+   COMPOSANTS DU SITE — Pied de page
+   ========================================================== */
+
+footer {
+    background-color: var(--site-bg-secondary) !important;
+    border-color: var(--site-border) !important;
+    color: var(--site-text-secondary);
+}
+
+footer p {
+    color: var(--site-text-secondary);
+}
+
+footer a {
+    color: var(--site-text-secondary) !important;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+footer a:hover {
+    color: var(--site-accent) !important;
+}
+
+footer hr {
+    border-color: var(--site-border) !important;
+    opacity: 1;
+}
+
+/* ==========================================================
    HERO — Identité visuelle Eyseal
    ========================================================== */
 
@@ -37,8 +317,16 @@ a:hover {
     overflow: hidden;
     padding: 4rem 0;
     background:
-        radial-gradient(circle at 75% 45%, rgba(0, 168, 255, 0.12), transparent 30%),
-        radial-gradient(circle at 15% 80%, rgba(0, 168, 255, 0.06), transparent 25%);
+        radial-gradient(
+            circle at 75% 45%,
+            var(--site-glow),
+            transparent 30%
+        ),
+        radial-gradient(
+            circle at 15% 80%,
+            rgba(0, 209, 255, 0.05),
+            transparent 25%
+        );
 }
 
 .min-vh-75 {
@@ -50,10 +338,10 @@ a:hover {
     align-items: center;
     gap: 0.6rem;
     padding: 0.5rem 0.9rem;
-    border: 1px solid rgba(0, 168, 255, 0.3);
+    border: 1px solid var(--site-border);
     border-radius: 50px;
-    color: #00a8ff;
-    background: rgba(0, 168, 255, 0.06);
+    color: var(--site-accent);
+    background: rgba(0, 209, 255, 0.06);
     font-size: 0.85rem;
     letter-spacing: 0.04em;
 }
@@ -62,8 +350,8 @@ a:hover {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #00a8ff;
-    box-shadow: 0 0 12px rgba(0, 168, 255, 0.8);
+    background: var(--site-accent);
+    box-shadow: 0 0 12px rgba(0, 209, 255, 0.8);
 }
 
 .hero-title {
@@ -75,14 +363,14 @@ a:hover {
 
 .hero-title span {
     display: block;
-    color: #00a8ff;
+    color: var(--site-accent);
 }
 
 .hero-text {
     max-width: 650px;
     font-size: 1.2rem;
     line-height: 1.8;
-    color: rgba(255, 255, 255, 0.7);
+    color: var(--site-text-secondary);
 }
 
 /* Illustration */
@@ -93,13 +381,14 @@ a:hover {
     height: 360px;
 }
 
+
 .hero-grid {
     position: absolute;
     inset: 0;
     opacity: 0.25;
     background-image:
-        linear-gradient(rgba(0, 168, 255, 0.15) 1px, transparent 1px),
-        linear-gradient(90deg, rgba(0, 168, 255, 0.15) 1px, transparent 1px);
+        linear-gradient(var(--site-border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--site-border) 1px, transparent 1px);
     background-size: 35px 35px;
     transform: perspective(500px) rotateX(55deg) rotateZ(-15deg);
     mask-image: radial-gradient(circle, black 20%, transparent 70%);
@@ -108,7 +397,7 @@ a:hover {
 .hero-circle {
     position: absolute;
     border-radius: 50%;
-    border: 1px solid rgba(0, 168, 255, 0.25);
+    border: 1px solid var(--site-border);
 }
 
 .hero-circle-1 {
@@ -123,7 +412,7 @@ a:hover {
     height: 190px;
     top: 85px;
     left: 85px;
-    border-color: rgba(0, 168, 255, 0.45);
+    border-color: rgba(0, 209, 255, 0.4);
 }
 
 .hero-card {
@@ -131,11 +420,11 @@ a:hover {
     top: 90px;
     left: 55px;
     width: 250px;
-    border: 1px solid rgba(0, 168, 255, 0.35);
+    border: 1px solid rgba(0, 209, 255, 0.35);
     border-radius: 12px;
-    background: rgba(20, 25, 30, 0.85);
+    background: rgba(17, 28, 48, 0.88);
     box-shadow:
-        0 0 40px rgba(0, 168, 255, 0.12),
+        0 0 40px var(--site-glow),
         0 20px 60px rgba(0, 0, 0, 0.4);
     backdrop-filter: blur(10px);
     transform: rotate(-4deg);
@@ -145,14 +434,14 @@ a:hover {
     display: flex;
     gap: 6px;
     padding: 12px 14px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-bottom: 1px solid rgba(241, 245, 249, 0.08);
 }
 
 .hero-card-header span {
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: rgba(255, 255, 255, 0.35);
+    background: rgba(241, 245, 249, 0.35);
 }
 
 .hero-card-body {
@@ -163,7 +452,7 @@ a:hover {
     height: 7px;
     margin-bottom: 14px;
     border-radius: 10px;
-    background: rgba(0, 168, 255, 0.35);
+    background: rgba(0, 209, 255, 0.35);
 }
 
 .hero-code-line.long {
@@ -213,11 +502,12 @@ a:hover {
     margin: 0 auto;
 }
 
+
 /* Orbites */
 
 .services-orbit {
     position: absolute;
-    border: 1px solid rgba(0, 168, 255, 0.25);
+    border: 1px solid var(--site-border);
     border-radius: 50%;
     left: 50%;
     top: 50%;
@@ -232,7 +522,7 @@ a:hover {
 .services-orbit-2 {
     width: 220px;
     height: 220px;
-    border-color: rgba(0, 168, 255, 0.4);
+    border-color: rgba(0, 209, 255, 0.4);
 }
 
 /* Centre */
@@ -250,21 +540,21 @@ a:hover {
 
     transform: translate(-50%, -50%);
 
-    border: 1px solid rgba(0, 168, 255, 0.5);
+    border: 1px solid rgba(0, 209, 255, 0.5);
     border-radius: 50%;
 
-    background: rgba(20, 25, 30, 0.85);
+    background: var(--site-bg-secondary);
 
     box-shadow:
-        0 0 35px rgba(0, 168, 255, 0.15),
-        0 0 80px rgba(0, 168, 255, 0.08);
+        0 0 35px var(--site-glow),
+        0 0 80px rgba(0, 209, 255, 0.08);
 
     backdrop-filter: blur(10px);
 
     font-size: 0.8rem;
     font-weight: 600;
     letter-spacing: 0.15em;
-    color: #00a8ff;
+    color: var(--site-accent);
 }
 
 /* Cartes flottantes */
@@ -274,18 +564,18 @@ a:hover {
 
     padding: 0.7rem 1rem;
 
-    border: 1px solid rgba(0, 168, 255, 0.3);
+    border: 1px solid var(--site-border);
     border-radius: 8px;
 
-    background: rgba(20, 25, 30, 0.8);
+    background: rgba(17, 28, 48, 0.88);
 
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.35),
-        0 0 25px rgba(0, 168, 255, 0.08);
+        0 0 25px var(--site-glow);
 
     backdrop-filter: blur(8px);
 
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--site-text-secondary);
 
     font-size: 0.75rem;
     font-weight: 600;
@@ -341,10 +631,10 @@ a:hover {
     height: 100%;
     padding: 2rem;
 
-    border: 1px solid rgba(0, 168, 255, 0.15);
+    border: 1px solid var(--site-border);
     border-radius: 14px;
 
-    background: rgba(20, 25, 30, 0.65);
+    background: var(--site-surface);
 
     box-shadow:
         0 10px 30px rgba(0, 0, 0, 0.2);
@@ -369,9 +659,9 @@ a:hover {
     width: 60px;
     height: 2px;
 
-    background: #00a8ff;
+    background: var(--site-accent);
 
-    box-shadow: 0 0 15px rgba(0, 168, 255, 0.6);
+    box-shadow: 0 0 15px var(--site-glow);
 }
 
 /* Effet au survol */
@@ -379,11 +669,11 @@ a:hover {
 .services-card:hover {
     transform: translateY(-8px);
 
-    border-color: rgba(0, 168, 255, 0.45);
+    border-color: rgba(0, 209, 255, 0.45);
 
     box-shadow:
         0 20px 45px rgba(0, 0, 0, 0.35),
-        0 0 30px rgba(0, 168, 255, 0.08);
+        0 0 30px var(--site-glow);
 }
 
 /* Titre */
@@ -393,6 +683,8 @@ a:hover {
 
     font-weight: 600;
     letter-spacing: -0.02em;
+
+    color: var(--site-text);
 }
 
 /* Description */
@@ -400,7 +692,7 @@ a:hover {
 .services-card .card-text {
     margin-bottom: 0;
 
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--site-text-secondary);
 
     line-height: 1.7;
 }
@@ -419,19 +711,19 @@ a:hover {
 
     margin-bottom: 1.5rem;
 
-    border: 1px solid rgba(0, 168, 255, 0.35);
+    border: 1px solid var(--site-border);
     border-radius: 10px;
 
-    background: rgba(0, 168, 255, 0.08);
+    background: rgba(0, 209, 255, 0.08);
 
-    color: #00a8ff;
+    color: var(--site-accent);
 
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.12em;
 
     box-shadow:
-        0 0 20px rgba(0, 168, 255, 0.08);
+        0 0 20px var(--site-glow);
 }
 
 /* Carte de service cliquable */
@@ -454,26 +746,26 @@ a:hover {
 
 .service-features {
     padding-left: 1.1rem;
-    color: rgba(255, 255, 255, 0.65);
+    color: var(--site-text-secondary);
     line-height: 1.8;
 }
 
 .service-features li::marker {
-    color: #00a8ff;
+    color: var(--site-accent);
 }
 
 .service-cta-text {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--site-text);
 }
 
 /* Offre recommandée */
 
 .services-card-featured {
-    border-color: rgba(0, 168, 255, 0.55);
+    border-color: rgba(0, 209, 255, 0.55);
 
     box-shadow:
         0 15px 40px rgba(0, 0, 0, 0.3),
-        0 0 35px rgba(0, 168, 255, 0.12);
+        0 0 35px var(--site-glow);
 
     transform: translateY(-6px);
 }
@@ -481,15 +773,15 @@ a:hover {
 .services-card-featured:hover {
     transform: translateY(-12px);
 
-    border-color: rgba(0, 168, 255, 0.75);
+    border-color: rgba(0, 209, 255, 0.75);
 
     box-shadow:
         0 25px 50px rgba(0, 0, 0, 0.4),
-        0 0 45px rgba(0, 168, 255, 0.18);
+        0 0 45px rgba(0, 209, 255, 0.18);
 }
 
-
 /* Appel à l'action des cartes de services */
+
 .service-card-cta {
     display: flex;
     align-items: center;
@@ -497,9 +789,12 @@ a:hover {
     gap: 0.75rem;
     margin-top: 1.5rem;
     padding-top: 1rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
-    color: var(--bs-info);
+
+    border-top: 1px solid var(--site-border);
+
+    color: var(--site-accent);
     font-weight: 600;
+
     transition: color 0.2s ease;
 }
 
@@ -509,9 +804,17 @@ a:hover {
 }
 
 .service-link:hover .service-card-cta {
-    color: #fff;
+    color: var(--site-accent-hover);
 }
 
 .service-link:hover .service-card-cta span:last-child {
     transform: translateX(4px);
+}
+
+/* ==========================================================
+   IDENTITÉ VISUELLE — Textes d'accentuation
+   ========================================================== */
+
+.text-info {
+    color: var(--site-accent) !important;
 }
